@@ -50,7 +50,7 @@ with mlflow.start_run():
         mlflow.log_metric(metric, value)
 
     # Set a tag that we can use to remind ourselves what this run was for
-    mlflow.set_tag("Training Info", "Switching to only players with nfl drafted data")
+    mlflow.set_tag("Training Info", "Adjusted knn to 3 and adjusted some of the scaling")
 
     # Infer the model signature
     signature = infer_signature(data.train_X, data.best_model.predict(data.train_X))

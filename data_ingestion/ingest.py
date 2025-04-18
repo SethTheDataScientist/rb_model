@@ -36,7 +36,7 @@ def run_data_ingestion(path, save_path):
 
     data.filtered_df = pd.merge(data.filtered_df, data.working_df, how = 'left', left_on = 'player_id', right_on = 'pff_id')
 
-    # data.filtered_df = data.filtered_df[(data.filtered_df['nic_year'] == data.filtered_df['Last_Season'] + 1) | (data.filtered_df['nic_year'].isna())]
+    data.filtered_df = data.filtered_df[(data.filtered_df['nic_year'] == data.filtered_df['Last_Season'] + 1) | (data.filtered_df['nic_year'].isna())]
 
     # print(data.filtered_df[data.filtered_df['ID.x'] == 'Alvin Kamara - 11822'])
 
@@ -107,6 +107,18 @@ def run_data_ingestion(path, save_path):
 
     data.model_df['clean_scaling'] = np.log(data.model_df['target']) - np.log((1 - data.model_df['target']))
     data.model_df['clean_scaling'] = data.model_df['clean_scaling'] + 12
+
+    # Fill in missing athletic information with knn values
+    data.model_df = model_functions.knn_impute_columns(data.model_df, target_columns = [
+                        'ht_in', 'wt', 'arm_in', 'wing_in',
+                        'c_reps', 'c_10y', 'c_40y', 'c_vj_in',
+                        'c_bj_in', 'c_3c', 'c_ss20', 'est_40y'],
+                        feature_columns = [
+                        'Attempts', 'ForcedMissedTackleRate', 'ExplosiveRate', 'TDP', 'YardsAfterContact', 'YPRR', 'WAR', 'RushWAR', 'RecWAR',
+                            'best_Attempts', 'best_ForcedMissedTackleRate', 'best_ExplosiveRate', 'best_TDP', 'best_YardsAfterContact', 'best_YPRR', 'best_WAR', 'best_RushWAR', 'best_RecWAR',
+                            'worst_Attempts', 'worst_ForcedMissedTackleRate', 'worst_ExplosiveRate', 'worst_TDP', 'worst_YardsAfterContact', 'worst_YPRR', 'worst_WAR', 'worst_RushWAR', 'worst_RecWAR',
+                            'Strength_Power 5'
+                        ], n_neighbors = 5)
 
     data.model_df = model_functions.impute_all_missing_values(data.model_df, method='median')
 

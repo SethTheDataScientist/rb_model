@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/141903490691571012/6c3f0df724f14e029658910adbc5e723/artifacts
+end_time: 1745009510129
+entry_point_name: ''
+experiment_id: '141903490691571012'
+lifecycle_stage: active
+run_id: 6c3f0df724f14e029658910adbc5e723
+run_name: trusting-fox-243
+run_uuid: 6c3f0df724f14e029658910adbc5e723
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745009505731
+status: 3
+tags: []
+user_id: sethl

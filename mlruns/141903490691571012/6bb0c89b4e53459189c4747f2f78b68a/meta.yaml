@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/141903490691571012/6bb0c89b4e53459189c4747f2f78b68a/artifacts
+end_time: 1745009635772
+entry_point_name: ''
+experiment_id: '141903490691571012'
+lifecycle_stage: active
+run_id: 6bb0c89b4e53459189c4747f2f78b68a
+run_name: charming-crow-631
+run_uuid: 6bb0c89b4e53459189c4747f2f78b68a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745009631911
+status: 3
+tags: []
+user_id: sethl

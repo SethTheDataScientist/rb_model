@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/141903490691571012/c7071f3dd3524a1abf480851aa91935a/artifacts
+end_time: 1744990255398
+entry_point_name: ''
+experiment_id: '141903490691571012'
+lifecycle_stage: active
+run_id: c7071f3dd3524a1abf480851aa91935a
+run_name: magnificent-stag-318
+run_uuid: c7071f3dd3524a1abf480851aa91935a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744990251173
+status: 3
+tags: []
+user_id: sethl

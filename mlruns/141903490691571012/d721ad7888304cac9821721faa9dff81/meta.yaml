@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/141903490691571012/d721ad7888304cac9821721faa9dff81/artifacts
+end_time: 1745009875504
+entry_point_name: ''
+experiment_id: '141903490691571012'
+lifecycle_stage: active
+run_id: d721ad7888304cac9821721faa9dff81
+run_name: redolent-hog-248
+run_uuid: d721ad7888304cac9821721faa9dff81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745009871547
+status: 3
+tags: []
+user_id: sethl

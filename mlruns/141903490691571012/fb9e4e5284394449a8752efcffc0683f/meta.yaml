@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/141903490691571012/fb9e4e5284394449a8752efcffc0683f/artifacts
+end_time: 1745009704166
+entry_point_name: ''
+experiment_id: '141903490691571012'
+lifecycle_stage: active
+run_id: fb9e4e5284394449a8752efcffc0683f
+run_name: carefree-roo-848
+run_uuid: fb9e4e5284394449a8752efcffc0683f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745009700304
+status: 3
+tags: []
+user_id: sethl
